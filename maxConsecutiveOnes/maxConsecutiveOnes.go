@@ -13,7 +13,7 @@ func FindMaxConsecutiveOnes(nums []int) int {
 			if i == 0 {
 				continue
 			}
-			genMap = append(genMap, m)
+			if len(m) > 0 { genMap = append(genMap, m)}
 			if maxx < len(m) {
 				maxx = len(m) //lay max len cua tung mang
 			}
